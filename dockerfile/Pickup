@@ -1,0 +1,8 @@
+1. Add files referenced by dockerfile
+ in this folder
+2. .war file - can it be downloaded via code
+   Need to copy the file in the container 
+host machine. 
+3. docker build - - tag xyz. 
+4 login to docker
+5. Push to dockrr registry
