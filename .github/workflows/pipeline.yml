@@ -23,6 +23,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     #- run: mkdir artifacts && cp target/*.war artifacts
+    - run:  cp target/*.war artifacts
     - uses: actions/download-artifact@v2
       with:
         name: Package
