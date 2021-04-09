@@ -23,10 +23,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-      - name: Publish package
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish package
+      run: mvn --batch-mode deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - run: mkdir artifacts && cp target/*.war artifacts
     - run:  cp target/*.war artifacts
