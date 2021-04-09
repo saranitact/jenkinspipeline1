@@ -29,7 +29,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Make artifacts dir & copy .war file to this dir
       run: mkdir artifacts && cp target/*.war artifacts
-      run:  cp target/*.war artifacts
+    - run:  cp target/*.war artifacts
     - uses: actions/upload-artifact@v2
       with:
         name: Package
