@@ -7,7 +7,14 @@
   <version>0.0.1-RELEASE</version>
   <name>DevOps Pipeline</name>
   <url>http://maven.apache.org</url>
- 
+ <distributionManagement>
+    <repository>
+        <id>releases</id>
+        <name>Releases</name>
+        <url>
+https://maven.pkg.github.com/saranitact/DevOpsPipeline</url>
+    </repository>
+ </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
