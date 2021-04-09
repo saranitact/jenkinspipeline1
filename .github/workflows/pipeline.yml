@@ -22,10 +22,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Publish package
-      run: mvn --batch-mode deploy --file pom.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ }}
     - name: Make artifacts dir & copy .war file to this dir
       run: mkdir artifacts && cp target/*.war artifacts
     - run:  cp target/*.war artifacts
