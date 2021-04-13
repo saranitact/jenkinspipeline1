@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.devops</groupId>
-  <artifactId>devopspipelinetwo</artifactId>
+  <artifactId>devopspipeline</artifactId>
   <packaging>war</packaging>
-  <version>v3</version>
+  <version>v2</version>
   <name>DevOps Pipeline</name>
   <url>http://maven.apache.org</url>
  <distributionManagement>
@@ -12,7 +12,7 @@
         <id>github</id>
         <name>GitHub Packages</name>
         <url>
-https://maven.pkg.github.com/saranitact/DevOpsPipeline2</url>
+https://maven.pkg.github.com/saranitact/DevOpsPipeline</url>
     </repository>
  </distributionManagement>
   <dependencies>
