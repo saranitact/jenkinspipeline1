@@ -4,12 +4,12 @@
   <groupId>com.devops</groupId>
   <artifactId>devopspipeline</artifactId>
   <packaging>war</packaging>
-  <version>v5</version>
+  <version>v6</version>
   <name>DevOps Pipeline</name>
   <url>http://maven.apache.org</url>
  <distributionManagement>
     <repository>
-        <id>releases</id>
+        <id>github</id>
         <name>Releases</name>
         <url>
 https://maven.pkg.github.com/saranitact/DevOpsPipeline</url>
