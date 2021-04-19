@@ -36,6 +36,8 @@ jobs:
         draft: false
         prerelease: false
 
+    - name: Update version
+      run: mvn -B versions:set -DnewVersion=v${{github.run_number}} -DgenerateBackupPoms=false
     - name: Publish to GitHub Packages Apache Maven
       run: mvn -B deploy --file pom.xml
     #  run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
