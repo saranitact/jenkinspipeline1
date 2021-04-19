@@ -25,7 +25,9 @@ jobs:
       run: mvn --batch-mode package --file pom.xml
     #  env:
       #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
   Publish:
+      needs: Build
     - name: Create GitHub Release
       uses: actions/create-release@v1
       env:
