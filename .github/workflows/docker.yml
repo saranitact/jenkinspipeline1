@@ -58,8 +58,8 @@ jobs:
      - name: Create artifacts directory and copy war file
        run: mkdir artifacts && cp target/*.wa​​r artifacts
      - uses: actions/upload-artifact@v2
-         with:
-           path: artifacts
+       with:
+         path: artifacts
 
 
      - name: Setup Docker Buildx
