@@ -41,6 +41,9 @@ jobs:
      - name: Update version
        run: mvn -B versions:set -DnewVersion=v${{github.run_number}} -DgenerateBackupPoms=false
 
+     - name: Build package
+       run: mvn --batch-mode package --file pom.xml
+     
      - name: Create artifacts directory and copy war file
        run: mkdir artifacts && cp target/*.wa​​r artifacts
      - uses: actions/upload-artifact@v2
