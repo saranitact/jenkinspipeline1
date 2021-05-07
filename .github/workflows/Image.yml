@@ -28,9 +28,9 @@ jobs:
   
     - name: Create artifacts directory and copy war file
     #  run: mkdir artifacts && cp target/*.wa​​r artifacts
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
-        path: target/DevOpsPipeline. war
+        path: target/DevOpsPipeline.war
 
   Publish:
      needs: Build
