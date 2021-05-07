@@ -57,7 +57,7 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v2
        with:
-         path: ./DevOpsPipeline.war
+         name: DevOpsPipeline.war
 
      - name: Build and push
        id: docker_build
