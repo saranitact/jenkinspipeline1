@@ -55,6 +55,9 @@ jobs:
          username: ${{ secrets.DOCKERHUB_USERNAME }}
          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+     - name: pwd and ls -l
+       run: pwd
+       run: ls -l
      - name: Download artifact
        uses: actions/download-artifact@v2
        with:
