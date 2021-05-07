@@ -61,8 +61,6 @@ jobs:
        run: ls -l
      - name: Download artifact
        uses: actions/download-artifact@v2
-       with:
-         name: DevOpsPipeline.war
 
      - name: Build and push
        id: docker_build
