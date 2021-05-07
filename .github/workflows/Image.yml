@@ -30,6 +30,7 @@ jobs:
     #  run: mkdir artifacts && cp target/*.wa​​r artifacts
       uses: actions/upload-artifact@v2
       with:
+        name: DevOpsPipeline.war
         path: target/DevOpsPipeline.war
 
   Publish:
