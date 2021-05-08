@@ -75,6 +75,6 @@ jobs:
        with:
          context: .
          load: true
-         tags: webapp:v${{github.run_number}}
+         tags: saranitact/repo1/webapp:v${{github.run_number}}
 
 
