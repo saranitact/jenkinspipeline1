@@ -65,6 +65,10 @@ jobs:
      - name: echo download path
        run: echo ${{steps.download.outputs.download-path}}
 
+    
+    - name: Build package
+      run: mvn --batch-mode package --file pom.xml
+
      - name: Build and push
        id: docker_build
        uses: docker/build-push-action@v2
