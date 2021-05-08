@@ -61,8 +61,7 @@ jobs:
        run: ls -l
      - name: Download artifact
        uses: actions/download-artifact@v2
-       with: 
-         path: https://github.com/saranitact/DevOpsPipeline
+       
      - name: Build and push
        id: docker_build
        uses: docker/build-push-action@v2
