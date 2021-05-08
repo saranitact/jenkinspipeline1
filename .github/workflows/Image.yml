@@ -75,4 +75,6 @@ jobs:
        with:
          context: .
          push: true
-         tags: webapp:v${{github.run_number}}
+         tags: repo1/webapp:v${{github.run_number}}
+
+
