@@ -82,7 +82,7 @@ jobs:
     #     docker image inspect saranitact/repo1:v${{github.run_number}} 
 
   Verify:
-    needs: Build
+    needs: Publish
     runs-on: ubuntu-latest
 
     steps:
