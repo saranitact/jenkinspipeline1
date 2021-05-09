@@ -79,5 +79,5 @@ jobs:
 
      - name: Inspect
        run: |
-         sleep 10
+         sleep 50
          docker image inspect saranitact/repo1:v${{github.run_number}} 
