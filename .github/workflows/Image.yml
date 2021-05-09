@@ -77,7 +77,11 @@ jobs:
          push: true
          tags: saranitact/repo1:v${{github.run_number}}
 
-     - name: Inspect
+     - name: Sleep
        run: |
          sleep 50
+
+
+     - name: Inspect
+       run: |
          docker image inspect saranitact/repo1:v${{github.run_number}} 
