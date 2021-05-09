@@ -95,5 +95,7 @@ jobs:
     - name: Create repo1 Docker container
       #uses: DigiPie/mongo-action@v1.0.1
       run: sudo docker run -p 8005:8080 -it -d repo1:latest
+      
+    - name: Verify container
       run: ps -a
       
