@@ -79,4 +79,4 @@ jobs:
 
      - name: Inspect
        run: |
-         docker image inspect webapp:v${{github.run_number}} 
+         docker image inspect saranitact/repo1:v${{github.run_number}} 
