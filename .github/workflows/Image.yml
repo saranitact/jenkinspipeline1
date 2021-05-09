@@ -66,8 +66,8 @@ jobs:
        run: echo ${{steps.download.outputs.download-path}}
 
     
-     - name: Build package
-       run: mvn --batch-mode package --file pom.xml
+    # - name: Build package
+    #  run: mvn --batch-mode package --file pom.xml
 
      - name: Build and push
        id: docker_build
@@ -79,4 +79,4 @@ jobs:
 
      - name: Inspect
        run: |
-         docker image inspect saranitact/repo1:v${{github.run_number}} 
+         docker image inspect repo1:v${{github.run_number}} 
