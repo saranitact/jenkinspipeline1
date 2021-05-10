@@ -103,7 +103,6 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Create repo1 Docker container
-      #uses: DigiPie/mongo-action@v1.0.1
       run: sudo docker run -p 8005:8080 -it -d saranitact/repo1:v${{github.run_number}}
       
     - name: Verify container
