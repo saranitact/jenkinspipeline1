@@ -26,7 +26,7 @@
 </td>
 <td width="3000" align="center">
 <font size=6 color=orange>
-WELCOME TO DEVOPS TOOLS INVENTORY
+HELLO AND WELCOME TO DEVOPS TOOLS INVENTORY
 </font></td>
 
 </tr>
